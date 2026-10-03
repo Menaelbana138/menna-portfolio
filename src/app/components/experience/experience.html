@@ -1,0 +1,14 @@
+<section class="section experience" id="experience" appScrollReveal>
+  <div class="container">
+    <h2 class="section-title">Experience / Training</h2>
+    @for (item of trainings(); track item.title) {
+      <div class="glass exp-item">
+        <div class="exp-head">
+          <h3>{{ item.title }}</h3>
+          <span class="chip">{{ item.period }}</span>
+        </div>
+        <p>{{ item.description }}</p>
+      </div>
+    }
+  </div>
+</section>

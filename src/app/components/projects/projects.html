@@ -1,0 +1,12 @@
+<section class="section projects" id="projects">
+  <div class="container">
+    <h2 class="section-title">Selected Work</h2>
+    <div class="projects-grid">
+      @for (project of projects(); track project.id) {
+        <app-project-card [project]="project" appScrollReveal />
+      } @empty {
+        <p>No projects yet.</p>
+      }
+    </div>
+  </div>
+</section>

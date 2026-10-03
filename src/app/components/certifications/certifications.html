@@ -1,0 +1,15 @@
+<section class="section certifications" id="certifications" appScrollReveal>
+  <div class="container">
+    <h2 class="section-title">Certifications</h2>
+    <div class="cert-grid">
+      @for (cert of certifications(); track cert.title) {
+        <div class="glass cert-item">
+          <span class="chip">{{ cert.date }}</span>
+          <h3>{{ cert.title }}</h3>
+          <p class="issuer">{{ cert.issuer }}</p>
+          <p class="detail">{{ cert.detail }}</p>
+        </div>
+      }
+    </div>
+  </div>
+</section>

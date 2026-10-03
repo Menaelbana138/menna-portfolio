@@ -1,0 +1,9 @@
+.edu-card h3 {
+  font-size: 1.15rem;
+  margin-bottom: 6px;
+}
+
+.uni {
+  color: var(--muted);
+  margin-bottom: 14px;
+}

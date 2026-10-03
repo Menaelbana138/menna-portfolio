@@ -1,0 +1,42 @@
+<section class="section contact" id="contact" appScrollReveal>
+  <div class="container">
+    <h2 class="section-title">Let's Work Together</h2>
+
+    <div class="glass contact-card">
+      <ul class="info-list">
+        <li>
+          <span class="label">Email</span>
+          <a [href]="'mailto:' + email()">{{ email() }}</a>
+        </li>
+        <li>
+          <span class="label">Phone</span>
+          <span>{{ phone() }}</span>
+        </li>
+        <li>
+          <span class="label">Location</span>
+          <span>{{ location() }}</span>
+        </li>
+        <li>
+          <span class="label">GitHub</span>
+          <a [href]="github()" target="_blank" rel="noopener">github.com/Menaelbana138</a>
+        </li>
+        <li>
+          <span class="label">LinkedIn</span>
+          <a [href]="linkedin()" target="_blank" rel="noopener">LinkedIn Profile</a>
+        </li>
+      </ul>
+
+      <div class="contact-form">
+        <input #nameInput type="text" placeholder="Your Name">
+        <input #emailInput type="email" placeholder="Your Email">
+        <textarea #messageInput rows="5" placeholder="Your Message"></textarea>
+        <button
+          type="button"
+          class="btn primary"
+          (click)="send(nameInput.value, emailInput.value, messageInput.value)">
+          Send Message →
+        </button>
+      </div>
+    </div>
+  </div>
+</section>

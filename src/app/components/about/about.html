@@ -1,0 +1,16 @@
+<section class="section about" id="about" appScrollReveal>
+  <div class="container">
+    <h2 class="section-title">About Me</h2>
+    <div class="glass about-card">
+      <p>{{ intro() }}</p>
+      <div class="info-grid">
+        @for (item of info(); track item.label) {
+          <div class="info-item">
+            <span class="label">{{ item.label }}</span>
+            <span class="value">{{ item.value }}</span>
+          </div>
+        }
+      </div>
+    </div>
+  </div>
+</section>

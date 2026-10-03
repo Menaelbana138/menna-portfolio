@@ -1,12 +1,19 @@
-import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Component } from '@angular/core';
+import { Navbar } from './components/navbar/navbar';
+import { Hero } from './components/hero/hero';
+import { About } from './components/about/about';
+import { Skills } from './components/skills/skills';
+import { Projects } from './components/projects/projects';
+import { Experience } from './components/experience/experience';
+import { Certifications } from './components/certifications/certifications';
+import { Education } from './components/education/education';
+import { Contact } from './components/contact/contact';
+import { Footer } from './components/footer/footer';
 
 @Component({
-  imports: [RouterOutlet],
   selector: 'app-root',
-  styleUrl: './app.css',
+  imports: [Navbar, Hero, About, Skills, Projects, Experience, Certifications, Education, Contact, Footer],
   templateUrl: './app.html',
+  styleUrl: './app.css'
 })
-export class App {
-  protected readonly title = signal('menna-portfolio');
-}
+export class App {}

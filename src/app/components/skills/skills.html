@@ -1,0 +1,24 @@
+<section class="section skills" id="skills" appScrollReveal>
+  <div class="container">
+    <h2 class="section-title">My Expertise</h2>
+
+    <div class="category-grid">
+      @for (group of skillCategories(); track group.category) {
+        <div class="glass category">
+          <h3>{{ group.category }}</h3>
+          @for (skill of group.items; track skill.name) {
+            <div class="skill-item">
+              <div class="skill-header">
+                <span>{{ skill.name }}</span>
+                <span class="skill-percent">{{ skill.level }}%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-fill" [style.width.%]="skill.level"></div>
+              </div>
+            </div>
+          }
+        </div>
+      }
+    </div>
+  </div>
+</section>

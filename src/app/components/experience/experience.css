@@ -1,0 +1,21 @@
+.exp-item {
+  margin-bottom: 16px;
+}
+
+.exp-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.exp-head h3 {
+  font-size: 1.1rem;
+}
+
+.exp-item p {
+  color: var(--muted);
+  line-height: 1.6;
+}
